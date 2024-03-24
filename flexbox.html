@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar Box Model</title>
+
+        <style>
+            .wadah_flex {
+                /* menjadi flexsibel dengan mengatur property display dengan nilai flex.*/
+                display: flex;
+                background-color: cadetblue;
+                justify-content: center;
+            }
+            .wadah_flex > div {
+                background-color: palevioletred;
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wadah_flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+
+        <p>Kesimpulan skenario 1 adalah : menambahkan background warna</p>
+        <p>Kesimpulan skenario 2 adalah : menambahkan background warna pada div dari anak class wadah-flex tersebut</p>
+        <p>Kesimpulan skenario 3 adalah : menambahkan properti flex-direction : column untuk mengatur mengatur arah tata letak flex menjadi kolom vertikal,
+            elemen anak ddiv akan ditampilkan dari atas ke bawah</p>
+        <p>Kesimpulan skenario 4 adalah : menambahkan properti flex-wrap : wrap-reverse untuk mengontrol elemen-elemen untuk dibungkus ke dalam garis baru (secara vertikal)
+            dan urutannya di balik, sehingga muncul diatas </p>
+        <p>Kesimpulan skenario 5 adalah : menambahkan properti flex-flow : row wrap untuk menentukan arah tata letak horizontal (kiri ke kanan) serta membungkus baris baru 
+            apabila melebihi lebar wadahnya</p>
+        <p>Kesimpulan skenario 6 adalah : menambahkan properti justify-content : center untuk mengontrol posisi elemen secara horizontal yang berada di tengah wadah</p>
+    </body>
+</html>
