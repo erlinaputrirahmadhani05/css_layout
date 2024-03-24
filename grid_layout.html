@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Belajar CSS Grid box</title>
+
+        <style>
+            .tempat_grid {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                background-color: #2196f3;
+                padding: 10px;
+            }
+            .item_grid {
+                background-color: rgb(255, 255, 255, 0.8);
+                border: 1px solid rgba (0, 0, 0, 0.8);
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+                grid-gap: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="tempat_grid">
+            <div class="item_grid">1</div>
+            <div class="item_grid">2</div>
+            <div class="item_grid">3</div>
+            <div class="item_grid">4</div>
+            <div class="item_grid">5</div>
+            <div class="item_grid">6</div>
+            <div class="item_grid">7</div>
+            <div class="item_grid">8</div>
+            <div class="item_grid">9</div>
+            <div><p>Kesimpulan : Class tempat_grid menampilkan 3 kolom dengan item_grid dengan background putih, 
+                garis tepi hitam, dan teks berada di tengah. Setiap item grid menampilkan angka 1-9. </p></div>
+                <p>kesimpulan skenario 3 : grid-column-gap: 10px digunakan untuk memberikan jarak  10px antara kolom-kolom. 
+                    Dan grid-row-gap: 50px digunakan untuk memberikan jarak 50px antara baris-baris dalam grid.
+                </p>
+                <p>Kesimpulan skenario 4 : grid-gap: 50px digunakan untuk memberikan jarak 50px antara kolom-kolom
+                    dan baris-baris di dalam grid.
+                </p>
+        </div>
+    </body>
+</html>
